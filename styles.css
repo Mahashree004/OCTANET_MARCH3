@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('to.jpg'); /* Replace 'background-image.jpg' with the path to your image */
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 0 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  color: #13aff2;
+  margin-top: 20px;
+}
+
+#commonTaskDate {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#taskInput {
+  width: calc(70% - 10px);
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#taskForm button {
+  width: calc(30% - 10px);
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: none;
+  background-color: #6bbbd5;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#taskForm button:hover {
+  background-color: #4a92b7;
+}
+
+#taskCount {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #666;
+}
+
+#taskList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.task button {
+  background-color: #6bbbd5;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.task button:first-child {
+  margin-left: 0;
+}
+
+.task button:hover {
+  background-color: #4a92b7;
+}
+
+.task span {
+  width: calc(70% - 20px);
+  margin-right: 10px;
+}
+
+.task span:nth-child(2) {
+  width: calc(30% - 20px);
+}
+
+#clearTasksBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #6bbbd5;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#clearTasksBtn:hover {
+  background-color: #4a92b7;
+}
